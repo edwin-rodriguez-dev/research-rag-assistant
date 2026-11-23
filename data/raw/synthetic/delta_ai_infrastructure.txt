@@ -1,0 +1,3 @@
+Delta Technology AI Infrastructure Outlook
+
+The team expects hyperscaler capital expenditures to remain elevated because of accelerated computing, networking, and data-center power infrastructure. Power availability is viewed as the most important physical constraint on new AI data-center capacity over the next twenty-four months. Transformer lead times and grid interconnection queues are secondary constraints.

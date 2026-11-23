@@ -1,0 +1,3 @@
+Research Information Governance Policy
+
+Documents are classified as PUBLIC, INTERNAL, or RESTRICTED. PUBLIC material may be retrieved by any user. INTERNAL research may be retrieved by RESEARCH or PM roles. RESTRICTED material may be retrieved only by PM or ADMIN. Authorization must be applied before document chunks are supplied to a language model; prompt instructions alone are not an access-control mechanism. Audit records must retain the user, role, question, retrieved chunks and documents, model, and elapsed time.

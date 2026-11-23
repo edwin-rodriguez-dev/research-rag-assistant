@@ -1,0 +1,10 @@
+Alpha Fund Liquidity Review
+
+Executive Summary
+Alpha Fund maintains concentrated large-cap technology exposure.
+
+Key Liquidity Risk
+The most important liquidity concern is crowded technology positioning combined with reduced dealer balance-sheet capacity during a broad volatility event. Under the stress scenario, the estimated liquidation horizon rises from two trading days to six trading days.
+
+Mitigation
+The portfolio manager agreed to retain a larger Treasury-bill buffer and reduce two less-liquid technology positions.

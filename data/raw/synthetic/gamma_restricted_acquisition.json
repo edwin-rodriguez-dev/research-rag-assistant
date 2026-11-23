@@ -1,0 +1,15 @@
+{
+  "external_id": "synthetic:gamma_restricted_acquisition",
+  "title": "Gamma Restricted Acquisition Analysis",
+  "company": null,
+  "document_type": "INTERNAL_RESEARCH",
+  "source_type": "SYNTHETIC",
+  "source_url": null,
+  "filing_date": null,
+  "classification": "RESTRICTED",
+  "allowed_roles": [
+    "PM",
+    "ADMIN"
+  ],
+  "synthetic": true
+}

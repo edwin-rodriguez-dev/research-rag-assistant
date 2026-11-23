@@ -1,0 +1,17 @@
+{
+  "external_id": "synthetic:epsilon_public_strategy",
+  "title": "Epsilon Strategy Overview",
+  "company": null,
+  "document_type": "INTERNAL_RESEARCH",
+  "source_type": "SYNTHETIC",
+  "source_url": null,
+  "filing_date": null,
+  "classification": "PUBLIC",
+  "allowed_roles": [
+    "PUBLIC",
+    "RESEARCH",
+    "PM",
+    "ADMIN"
+  ],
+  "synthetic": true
+}

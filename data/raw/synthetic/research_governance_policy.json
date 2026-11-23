@@ -1,0 +1,16 @@
+{
+  "external_id": "synthetic:research_governance_policy",
+  "title": "Research Information Governance Policy",
+  "company": null,
+  "document_type": "INTERNAL_RESEARCH",
+  "source_type": "SYNTHETIC",
+  "source_url": null,
+  "filing_date": null,
+  "classification": "INTERNAL",
+  "allowed_roles": [
+    "RESEARCH",
+    "PM",
+    "ADMIN"
+  ],
+  "synthetic": true
+}

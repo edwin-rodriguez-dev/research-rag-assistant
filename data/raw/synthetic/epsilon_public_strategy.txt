@@ -1,0 +1,3 @@
+Epsilon Strategy Overview
+
+Epsilon is a diversified long-short equity strategy emphasizing fundamental security selection, position sizing, and disciplined risk management. This overview is public and contains no confidential positions or forecasts.
