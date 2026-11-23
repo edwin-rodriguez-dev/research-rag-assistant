@@ -4,9 +4,11 @@ __pycache__/
 *.pyc
 *.egg-info/
 .env
+.env.local
 .docker-postgres.env
 .streamlit/secrets.toml
 data/raw/sec/*
 !data/raw/sec/.gitkeep
 .idea/
 *.iml
+.neon
