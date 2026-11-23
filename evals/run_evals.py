@@ -33,6 +33,30 @@ CASES = [
         None,
         ("38",),
     ),
+    (
+        "NVIDIA foundries",
+        "Which foundries does NVIDIA partner with to manufacture its semiconductor wafers?",
+        "PUBLIC",
+        "NVIDIA CORP 10-K filed 2026-02-25",
+        None,
+        ("tsmc", "samsung"),
+    ),
+    (
+        "Goldman liquidity principles",
+        "What are the three principles Goldman Sachs uses to manage liquidity risk?",
+        "PUBLIC",
+        "GOLDMAN SACHS GROUP INC 10-K filed 2026-02-25",
+        None,
+        ("gcla", "contingency funding"),
+    ),
+    (
+        "Apple AI data center constraints",
+        "What external factors or operational constraints affect Apple's ability to build and expand data centers for AI compute capacity?",
+        "PUBLIC",
+        "Apple Inc. 10-K filed 2026-11-03",
+        None,
+        ("power", "water"),
+    ),
 ]
 
 if __name__ == "__main__":

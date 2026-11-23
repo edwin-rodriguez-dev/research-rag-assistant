@@ -82,3 +82,40 @@ python -m venv .venv
 - ADMIN: all documents
 
 Authorization is applied in the SQL retrieval query before chunks enter model context.
+
+## Cloud Deployment
+
+To deploy the Research RAG Assistant to Streamlit Community Cloud with a managed cloud database:
+
+1. Create a managed PostgreSQL database that supports pgvector (e.g., Neon, Supabase, AWS RDS, Tembo).
+2. Obtain its PostgreSQL connection string (`postgresql://USER:PASSWORD@HOST:PORT/DATABASE`).
+3. Temporarily set local `DATABASE_URL` in `.env` to that cloud connection string.
+4. Run schema initialization:
+   ```powershell
+   .venv\Scripts\python.exe scripts/init_db.py
+   ```
+5. Run document generation and download (if not already fetched locally):
+   ```powershell
+   .venv\Scripts\python.exe scripts/generate_synthetic_docs.py
+   .venv\Scripts\python.exe scripts/fetch_sec_documents.py
+   ```
+6. Ingest, embed, and store all documents and vectors into the cloud database:
+   ```powershell
+   .venv\Scripts\python.exe scripts/ingest_documents.py
+   ```
+7. Verify the cloud database schema and row counts:
+   ```powershell
+   .venv\Scripts\python.exe scripts/verify_database.py
+   ```
+8. Restore your local `.env` file's `DATABASE_URL` to point back to the local Docker database if desired.
+9. Deploy `app.py` from your GitHub repository to Streamlit Community Cloud.
+10. Add deployment secrets through the Streamlit Community Cloud app settings (see `.streamlit/secrets.toml.example`):
+    - `DATABASE_URL`
+    - `OPENAI_API_KEY`
+    - `SEC_USER_AGENT`
+    - `OPENAI_RAG_MODEL`
+    - `OPENAI_EMBEDDING_MODEL`
+    - `EMBEDDING_DIMENSIONS`
+    - `RAG_TOP_K`
+    - `RAG_CANDIDATE_K`
+11. Open the deployed application URL and test retrieval, citation generation, and role-based ACL behavior.
